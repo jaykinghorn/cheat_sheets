@@ -1,0 +1,14 @@
+Shell Commands Cheat Sheet 
+< input_file_name
+cat - read file to screen
+> output_file
+
+
+
+
+Cut specific columns from CSV
+< file.csv csvcut -c column_1, column_2, column3 | head | csvlook 
+#This can be done with indices (starting at 1) 
+
+Create SQL command on CSV and print to screen 
+< file.csv csvsql -- query "SELECT column_1, column_2 FROM stdin | head | csvlook
